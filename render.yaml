@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: portfolio-api
+    runtime: node
+    plan: free
+    rootDir: apps/api
+    buildCommand: cd ../.. && npm install && npm run build --workspace=apps/api
+    startCommand: npm run start:prod
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: PORT
+        value: "3001"
+      - key: CORS_ORIGIN
+        sync: false
