@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { ThemeToggle } from './ThemeToggle';
+import { CardNavLink } from './FeatureActions';
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
 
@@ -14,7 +15,11 @@ const navItems = [
   { href: '#contact', label: 'Contact' },
 ];
 
-export function Header() {
+interface HeaderProps {
+  showCard?: boolean;
+}
+
+export function Header({ showCard = false }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -33,9 +38,9 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="/" className="text-lg font-bold tracking-tight">
+        <Link href="/" className="text-lg font-bold tracking-tight">
           OH<span className="text-accent">.</span>
-        </a>
+        </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
             <a
@@ -46,12 +51,7 @@ export function Header() {
               {item.label}
             </a>
           ))}
-          <Link
-            href="/card"
-            className="text-sm text-[var(--color-text-muted)] transition-colors hover:text-accent"
-          >
-            Card
-          </Link>
+          {showCard && <CardNavLink />}
         </nav>
         <ThemeToggle />
       </div>

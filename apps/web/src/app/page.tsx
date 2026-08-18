@@ -7,6 +7,7 @@ import { Projects } from '@/components/Projects';
 import { Education } from '@/components/Education';
 import { ContactSection, Footer } from '@/components/Contact';
 import { getPortfolio } from '@/lib/api';
+import { getShowCard, getShowCv } from '@/lib/features';
 import type { ProjectEntry } from '@/lib/types';
 
 function getAllProjects(
@@ -20,19 +21,22 @@ function getAllProjects(
 
 export default async function HomePage() {
   const portfolio = await getPortfolio();
+  const showCard = getShowCard();
+  const showCv = getShowCv();
 
   const experienceProjects = portfolio.experience.flatMap((exp) => exp.projects ?? []);
   const allProjects = getAllProjects(experienceProjects, portfolio.projects);
 
   return (
     <>
-      <Header />
+      <Header showCard={showCard} />
       <main>
         <Hero
           name={portfolio.name}
           title={portfolio.title}
           tagline={portfolio.tagline}
           contact={portfolio.contact}
+          showCv={showCv}
         />
         <About
           summary={portfolio.summary}
@@ -43,7 +47,7 @@ export default async function HomePage() {
         <Experience experience={portfolio.experience} />
         <Projects projects={allProjects} />
         <Education education={portfolio.education} training={portfolio.training} />
-        <ContactSection contact={portfolio.contact} />
+        <ContactSection contact={portfolio.contact} showCv={showCv} />
       </main>
       <Footer name={portfolio.name} />
     </>

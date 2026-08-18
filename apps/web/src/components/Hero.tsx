@@ -1,4 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { CvDownloadButton } from '@/components/FeatureActions';
 import type { Contact } from '@/lib/types';
 
 interface HeroProps {
@@ -6,9 +7,10 @@ interface HeroProps {
   title: string;
   tagline: string;
   contact: Contact;
+  showCv?: boolean;
 }
 
-export function Hero({ name, title, tagline, contact }: HeroProps) {
+export function Hero({ name, title, tagline, contact, showCv = false }: HeroProps) {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
       <div className="pointer-events-none absolute inset-0">
@@ -55,6 +57,7 @@ export function Hero({ name, title, tagline, contact }: HeroProps) {
           >
             View Projects
           </a>
+          {showCv && <CvDownloadButton />}
         </div>
 
         <div

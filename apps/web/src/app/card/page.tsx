@@ -1,6 +1,9 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import { ArrowLeft, Download } from 'lucide-react';
 import { BusinessCardFace, getCardDownloads } from '@/components/BusinessCard';
+import { getPortfolio } from '@/lib/api';
+import { getShowCard } from '@/lib/features';
 import { getSiteUrl } from '@/lib/utils';
 
 export const metadata = {
@@ -8,7 +11,12 @@ export const metadata = {
   description: 'Download print-ready business card designs matching the portfolio brand.',
 };
 
-export default function CardPage() {
+export default async function CardPage() {
+  if (!getShowCard()) {
+    notFound();
+  }
+
+  const portfolio = await getPortfolio();
   const portfolioUrl = getSiteUrl();
   const downloads = getCardDownloads();
 
@@ -44,13 +52,13 @@ export default function CardPage() {
             <p className="mb-3 text-sm font-medium uppercase tracking-wider text-[var(--color-text-muted)]">
               Front
             </p>
-            <BusinessCardFace side="front" portfolioUrl={portfolioUrl} />
+            <BusinessCardFace side="front" portfolioUrl={portfolioUrl} contact={portfolio.contact} />
           </div>
           <div>
             <p className="mb-3 text-sm font-medium uppercase tracking-wider text-[var(--color-text-muted)]">
               Back
             </p>
-            <BusinessCardFace side="back" portfolioUrl={portfolioUrl} />
+            <BusinessCardFace side="back" portfolioUrl={portfolioUrl} contact={portfolio.contact} />
           </div>
         </div>
 

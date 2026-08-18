@@ -1,14 +1,22 @@
 import { Injectable } from '@nestjs/common';
+import { resolveContact } from './contact.config';
 import { portfolioData, Portfolio } from './portfolio.data';
 
 @Injectable()
 export class PortfolioService {
+  private withResolvedContact(): Portfolio {
+    return {
+      ...portfolioData,
+      contact: resolveContact(portfolioData.contact),
+    };
+  }
+
   getPortfolio(): Portfolio {
-    return portfolioData;
+    return this.withResolvedContact();
   }
 
   getProfile() {
-    const { name, title, tagline, summary, contact } = portfolioData;
+    const { name, title, tagline, summary, contact } = this.withResolvedContact();
     return { name, title, tagline, summary, contact };
   }
 
@@ -36,6 +44,6 @@ export class PortfolioService {
   }
 
   getContact() {
-    return portfolioData.contact;
+    return resolveContact(portfolioData.contact);
   }
 }

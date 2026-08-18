@@ -84,6 +84,8 @@ npm run start:web   # Next.js on port 3000
 |---|---|---|
 | `PORT` | `3001` | API server port |
 | `CORS_ORIGIN` | `http://localhost:3000` | Allowed frontend origin |
+| `CONTACT_EMAIL` | — | Contact email (overrides default in portfolio data) |
+| `CONTACT_PHONE` | — | Contact phone (overrides default in portfolio data) |
 
 **Web (`apps/web/.env.local`)**
 
@@ -91,6 +93,11 @@ npm run start:web   # Next.js on port 3000
 |---|---|---|
 | `NEXT_PUBLIC_API_URL` | `http://localhost:3001` | Backend API base URL |
 | `NEXT_PUBLIC_SITE_URL` | `http://localhost:3000` | Public site URL (Open Graph, QR regeneration) |
+| `CONTACT_EMAIL` | — | Used by `npm run generate:card` (API reads from `apps/api/.env`) |
+| `CONTACT_PHONE` | — | Used by `npm run generate:card` (API reads from `apps/api/.env`) |
+| `NEXT_PUBLIC_SHOW_CARD` | `false` | Show `/card` page and header link when `true` |
+| `NEXT_PUBLIC_SHOW_CV` | `false` | Show CV download buttons when `true` |
+| `CV_GOOGLE_DRIVE_URL` | — | Google Drive share link for CV (server-side, used by `/api/cv`) |
 
 ## Tech Stack
 

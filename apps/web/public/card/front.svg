@@ -31,11 +31,13 @@
   
   <text x="48" y="72" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#f1f5f9">OH<tspan fill="#3b82f6">.</tspan></text>
   <text x="48" y="200" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#f1f5f9">Ouassim Hammadi</text>
-  <text x="48" y="262" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="url(#titleGradient)">Full Stack Engineer</text>
-  <text x="48" y="330" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#94a3b8">Building scalable systems, AI-powered platforms, and</text>
-  <text x="48" y="362" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#94a3b8"> microservices at scale.</text>
-  <rect x="48" y="548" width="152" height="36" rx="18" fill="#0a0a0f" stroke="#1e293b" stroke-width="1.5" />
-         <text x="124" y="572" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#94a3b8">Node.js</text><rect x="216" y="548" width="152" height="36" rx="18" fill="#0a0a0f" stroke="#1e293b" stroke-width="1.5" />
-         <text x="292" y="572" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#94a3b8">React</text><rect x="384" y="548" width="152" height="36" rx="18" fill="#0a0a0f" stroke="#1e293b" stroke-width="1.5" />
-         <text x="460" y="572" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#94a3b8">Kubernetes</text>
+  <text x="48" y="262" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="url(#titleGradient)">Full Stack &amp; AI Integration Engineer</text>
+  <text x="48" y="330" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#94a3b8">Building scalable distributed systems, AI-powered pl</text>
+  <text x="48" y="362" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#94a3b8">atforms &amp; high-performance microservices.</text>
+  <rect x="48" y="548" width="92" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+         <text x="94" y="572" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#cbd5e1">NestJS</text><rect x="152" y="548" width="92" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+         <text x="198" y="572" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#cbd5e1">Django</text><rect x="256" y="548" width="92" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+         <text x="302" y="572" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#cbd5e1">React</text><rect x="360" y="548" width="92" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+         <text x="406" y="572" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#cbd5e1">Docker</text><rect x="464" y="548" width="92" height="36" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+         <text x="510" y="572" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#cbd5e1">Kubernetes</text>
 </svg>

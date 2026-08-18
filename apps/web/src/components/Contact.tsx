@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { CvDownloadButton } from '@/components/FeatureActions';
 import type { Contact } from '@/lib/types';
 
 interface ContactSectionProps {
   contact: Contact;
+  showCv?: boolean;
 }
 
-export function ContactSection({ contact }: ContactSectionProps) {
+export function ContactSection({ contact, showCv = false }: ContactSectionProps) {
   const links = [
     {
       icon: Mail,
@@ -60,6 +62,11 @@ export function ContactSection({ contact }: ContactSectionProps) {
             </a>
           ))}
         </div>
+        {showCv && (
+          <div className="mt-8 flex justify-center">
+            <CvDownloadButton variant="primary" />
+          </div>
+        )}
         <div className="mt-10 flex flex-col items-center gap-3 border-t border-[var(--color-border)] pt-8">
           <Image
             src="/qr-code.png"
@@ -79,7 +86,7 @@ export function Footer({ name }: { name: string }) {
   return (
     <footer className="border-t border-[var(--color-border)] py-8 text-center text-sm text-[var(--color-text-muted)]">
       <p>
-        © {new Date().getFullYear()} {name}. Built with Next.js & NestJS.
+        © {new Date().getFullYear()} {name}.
       </p>
     </footer>
   );
