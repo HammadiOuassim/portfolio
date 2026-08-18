@@ -12,3 +12,27 @@ export function formatDateRange(start: string, end: string): string {
 export function cn(...classes: (string | false | undefined | null)[]): string {
   return classes.filter(Boolean).join(' ');
 }
+
+function parseSiteUrl(value: string | undefined): string | null {
+  const trimmed = value?.trim();
+  if (!trimmed) return null;
+
+  const withProtocol = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+
+  try {
+    const url = new URL(withProtocol);
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
+    return url.origin;
+  } catch {
+    return null;
+  }
+}
+
+export function getSiteUrl(): string {
+  const configured =
+    parseSiteUrl(process.env.NEXT_PUBLIC_SITE_URL) ??
+    parseSiteUrl(process.env.VERCEL_PROJECT_PRODUCTION_URL) ??
+    parseSiteUrl(process.env.VERCEL_URL);
+
+  return configured ?? 'http://localhost:3000';
+}
