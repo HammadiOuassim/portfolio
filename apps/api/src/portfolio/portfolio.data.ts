@@ -75,7 +75,7 @@ export interface Portfolio {
 
 export const portfolioData: Portfolio = {
   name: 'Ouassim Hammadi',
-  title: 'Full Stack Engineer',
+  title: 'Full Stack Engineer & DevOps',
   tagline: 'Building scalable systems, AI-powered platforms, and microservices at scale.',
   summary:
     'Full Stack Engineer with experience architecting microservices systems scaling to 300,000+ users via Kubernetes. Skilled in backend and frontend development, AI model integration, and DevOps workflows. Represented company technology portfolios at international events including Mobile World Congress Barcelona and MWC Doha.',
@@ -128,12 +128,48 @@ export const portfolioData: Portfolio = {
   ],
   experience: [
     {
+      id: 'digi-booking',
+      role: 'Full Stack Engineer',
+      company: 'Digi Booking',
+      type: 'Hybrid',
+      startDate: '2026-07',
+      endDate: 'Present',
+      summary:
+        'Full Stack Engineer at Digi Booking, owning core products on NEXUS AI — an AI-powered social platform — from backend design through the user-facing experience.',
+      highlights: [
+        {
+          text: 'Designed how product data, permissions, and AI stay separated: the platform owns the user record and consent; AI only generates help. Users never talk to the AI layer directly.',
+        },
+        {
+          text: 'Delivered Education: a system of record for enrollments and progress, plus Course Studio, an adaptive tutor, quizzes, flashcards, career-path evaluation, and learning analytics.',
+        },
+        {
+          text: 'Delivered Health: a secure path for sensitive wellness data, turning voice and camera signals into practical insights, with an AI advisor, symptom triage, and an English/French experience.',
+        },
+      ],
+      projects: [
+        {
+          id: 'nexus-ai',
+          title: 'NEXUS AI',
+          period: 'Jul 2026 – Present',
+          description:
+            'AI-powered social platform with two core product lines: Education (personalized learning) and Health (wellness advisor).',
+          technologies: ['NestJS', 'React', 'AI Integration', 'Microservices', 'PostgreSQL'],
+          highlights: [
+            'Platform-owned user records and consent with AI generating help only — users never interact with the AI layer directly.',
+            'Education: enrollments, progress tracking, Course Studio, adaptive tutor, quizzes, flashcards, career-path evaluation, and learning analytics.',
+            'Health: secure wellness data pipeline, voice and camera signal analysis, AI advisor, symptom triage, and bilingual English/French experience.',
+          ],
+        },
+      ],
+    },
+    {
       id: 'intaj-mouhtawayat',
-      role: 'Full Stack Developer',
+      role: 'Full Stack Engineer',
       company: 'Intaj Mouhtawayat',
       type: 'Full Time',
       startDate: '2025-02',
-      endDate: 'Present',
+      endDate: '2026-06',
       summary:
         'Worked on 5 key AI-supported projects as a Full Stack Engineer, contributing to backend and frontend development, microservices architecture, AI models integration, and deployment.',
       highlights: [
@@ -151,7 +187,7 @@ export const portfolioData: Portfolio = {
         {
           id: 'brand-monitoring',
           title: 'SaaS Brand Monitoring & Reputation Platform',
-          period: 'Jan 2026 – Present',
+          period: 'Jan 2026 – Jun 2026',
           description:
             'AI-powered SaaS platform to track social media brand mentions, calculate reputation power, and generate automated alerts and recommendations.',
           technologies: [

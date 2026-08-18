@@ -43,9 +43,9 @@ export default async function HomePage() {
           interests={portfolio.interests}
           languages={portfolio.languages}
         />
-        <Skills skills={portfolio.skills} />
         <Experience experience={portfolio.experience} />
         <Projects projects={allProjects} />
+        <Skills skills={portfolio.skills} />
         <Education education={portfolio.education} training={portfolio.training} />
         <ContactSection contact={portfolio.contact} showCv={showCv} />
       </main>

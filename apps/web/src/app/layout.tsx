@@ -17,13 +17,13 @@ const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Ouassim Hammadi — Full Stack Engineer',
+  title: 'Ouassim Hammadi — Full Stack Engineer & DevOps',
   description:
-    'Portfolio of Ouassim Hammadi, Full Stack Engineer specializing in microservices, AI-powered platforms, and scalable systems.',
+    'Portfolio of Ouassim Hammadi, Full Stack Engineer & DevOps specializing in microservices, AI-powered platforms, and scalable systems.',
   openGraph: {
-    title: 'Ouassim Hammadi — Full Stack Engineer',
+    title: 'Ouassim Hammadi — Full Stack Engineer & DevOps',
     description:
-      'Portfolio of Ouassim Hammadi, Full Stack Engineer specializing in microservices, AI-powered platforms, and scalable systems.',
+      'Portfolio of Ouassim Hammadi, Full Stack Engineer & DevOps specializing in microservices, AI-powered platforms, and scalable systems.',
     url: siteUrl,
     siteName: 'Ouassim Hammadi Portfolio',
     type: 'website',
