@@ -18,6 +18,7 @@ export interface ProjectEntry {
   id: string;
   title: string;
   period?: string;
+  region?: string;
   description: string;
   technologies: string[];
   highlights: string[];

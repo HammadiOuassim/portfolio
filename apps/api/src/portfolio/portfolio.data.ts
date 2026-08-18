@@ -31,6 +31,7 @@ export interface ProjectEntry {
   id: string;
   title: string;
   period?: string;
+  region?: string;
   description: string;
   technologies: string[];
   highlights: string[];
@@ -78,7 +79,7 @@ export const portfolioData: Portfolio = {
   title: 'Full Stack Engineer & DevOps',
   tagline: 'Building scalable systems, AI-powered platforms, and microservices at scale.',
   summary:
-    'Full Stack Engineer with experience architecting microservices systems scaling to 300,000+ users via Kubernetes. Skilled in backend and frontend development, AI model integration, and DevOps workflows. Represented company technology portfolios at international events including Mobile World Congress Barcelona and MWC Doha.',
+    'Full Stack Engineer with experience architecting microservices systems scaling to 300,000+ users via Kubernetes, building products for African and European markets. Skilled in backend and frontend development, AI model integration, and DevOps workflows. Represented company technology portfolios at international events including Mobile World Congress Barcelona and MWC Doha.',
   contact: {
     email: 'ouassimhammadi@gmail.com',
     phone: '+213 7 82 24 78 13',
@@ -152,11 +153,13 @@ export const portfolioData: Portfolio = {
           id: 'nexus-ai',
           title: 'NEXUS AI',
           period: 'Jul 2026 – Present',
+          region: 'European Union',
           description:
-            'AI-powered social platform with two core product lines: Education (personalized learning) and Health (wellness advisor).',
-          technologies: ['NestJS', 'React', 'AI Integration', 'Microservices', 'PostgreSQL'],
+            'NEXUS AI is a next-generation AI-powered social ecosystem for individuals, families, professionals, and organizations. The product spans life domains — social, health, education, finance, work, and wellbeing — with the platform owning identity, consent, and APIs while AI services own the models. Designed for the European Union region.',
+          technologies: ['NestJS', 'React', 'AI Integration', 'Microservices', 'PostgreSQL', 'GDPR'],
           highlights: [
-            'Platform-owned user records and consent with AI generating help only — users never interact with the AI layer directly.',
+            'Designed for the EU market with GDPR-aligned consent, privacy-first data boundaries, and bilingual English/French experiences.',
+            'Platform-owned identity, consent, and APIs — AI services own the models; users never interact with the AI layer directly.',
             'Education: enrollments, progress tracking, Course Studio, adaptive tutor, quizzes, flashcards, career-path evaluation, and learning analytics.',
             'Health: secure wellness data pipeline, voice and camera signal analysis, AI advisor, symptom triage, and bilingual English/French experience.',
           ],
@@ -188,6 +191,7 @@ export const portfolioData: Portfolio = {
           id: 'brand-monitoring',
           title: 'SaaS Brand Monitoring & Reputation Platform',
           period: 'Jan 2026 – Jun 2026',
+          region: 'Africa',
           description:
             'AI-powered SaaS platform to track social media brand mentions, calculate reputation power, and generate automated alerts and recommendations.',
           technologies: [
@@ -210,6 +214,7 @@ export const portfolioData: Portfolio = {
           id: 'algerian-social',
           title: 'Algerian Social Media Platform',
           period: 'Oct 2025 – Jan 2026',
+          region: 'Algeria',
           description:
             'Nationwide platform with over 300,000 active users across Algeria; presented at MWC Barcelona 2026 and Algeria Startup Conference 2025.',
           technologies: [
