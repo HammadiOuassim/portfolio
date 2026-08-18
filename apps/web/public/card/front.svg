@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1004" height="650" viewBox="0 0 1004 650">
+  
+    <defs>
+      <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#3b82f6" />
+        <stop offset="100%" stop-color="#8b5cf6" />
+      </linearGradient>
+      <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#3b82f6" />
+        <stop offset="100%" stop-color="#8b5cf6" />
+      </linearGradient>
+      <radialGradient id="orbBlue" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35" />
+        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="orbViolet" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+        <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+      </radialGradient>
+      <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="40" />
+      </filter>
+    </defs>
+  
+  
+    <rect width="1004" height="650" fill="#0a0a0f" />
+    <circle cx="120" cy="80" r="200" fill="url(#orbBlue)" filter="url(#softBlur)" />
+    <circle cx="904" cy="590" r="220" fill="url(#orbViolet)" filter="url(#softBlur)" />
+    <rect x="48" y="646" width="180" height="3" rx="1.5" fill="url(#accentLine)" opacity="0.9" />
+  
+  <text x="48" y="72" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#f1f5f9">OH<tspan fill="#3b82f6">.</tspan></text>
+  <text x="48" y="200" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#f1f5f9">Ouassim Hammadi</text>
+  <text x="48" y="262" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="url(#titleGradient)">Full Stack Engineer</text>
+  <text x="48" y="330" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#94a3b8">Building scalable systems, AI-powered platforms, and</text>
+  <text x="48" y="362" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#94a3b8"> microservices at scale.</text>
+  <rect x="48" y="548" width="152" height="36" rx="18" fill="#0a0a0f" stroke="#1e293b" stroke-width="1.5" />
+         <text x="124" y="572" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#94a3b8">Node.js</text><rect x="216" y="548" width="152" height="36" rx="18" fill="#0a0a0f" stroke="#1e293b" stroke-width="1.5" />
+         <text x="292" y="572" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#94a3b8">React</text><rect x="384" y="548" width="152" height="36" rx="18" fill="#0a0a0f" stroke="#1e293b" stroke-width="1.5" />
+         <text x="460" y="572" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#94a3b8">Kubernetes</text>
+</svg>

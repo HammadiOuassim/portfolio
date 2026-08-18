@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1004" height="650" viewBox="0 0 1004 650">
+  
+    <defs>
+      <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#3b82f6" />
+        <stop offset="100%" stop-color="#8b5cf6" />
+      </linearGradient>
+      <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#3b82f6" />
+        <stop offset="100%" stop-color="#8b5cf6" />
+      </linearGradient>
+      <radialGradient id="orbBlue" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35" />
+        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="orbViolet" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+        <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+      </radialGradient>
+      <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="40" />
+      </filter>
+    </defs>
+  
+  
+    <rect width="1004" height="650" fill="#0a0a0f" />
+    <circle cx="120" cy="80" r="200" fill="url(#orbBlue)" filter="url(#softBlur)" />
+    <circle cx="904" cy="590" r="220" fill="url(#orbViolet)" filter="url(#softBlur)" />
+    <rect x="48" y="646" width="180" height="3" rx="1.5" fill="url(#accentLine)" opacity="0.9" />
+  
+  <text x="48" y="72" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#f1f5f9">OH<tspan fill="#3b82f6">.</tspan></text>
+  
+        <text x="48" y="120" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#3b82f6" letter-spacing="1">EMAIL</text>
+        <text x="48" y="152" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#f1f5f9">ouassimhammadi@gmail.com</text>
+      
+        <text x="48" y="192" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#3b82f6" letter-spacing="1">PHONE</text>
+        <text x="48" y="224" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#f1f5f9">+213 7 82 24 78 13</text>
+      
+        <text x="48" y="264" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#3b82f6" letter-spacing="1">LINKEDIN</text>
+        <text x="48" y="296" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#f1f5f9">linkedin.com/in/ouassim-hammadi</text>
+      
+        <text x="48" y="336" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#3b82f6" letter-spacing="1">GITHUB</text>
+        <text x="48" y="368" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#f1f5f9">github.com/HammadiOuassim</text>
+      
+  <rect x="720" y="140" width="240" height="240" rx="16" fill="#ffffff" />
+  <image href="data:image/png;base64,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" x="732" y="152" width="216" height="216" />
+  <text x="840" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#f1f5f9">Scan my portfolio</text>
+  <text x="840" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#94a3b8">portfolio-web-zeem2.vercel.app</text>
+  <rect x="48" y="594" width="908" height="1" fill="#1e293b" />
+  <text x="48" y="626" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#94a3b8">Full Stack Engineer · Microservices · AI · DevOps</text>
+</svg>

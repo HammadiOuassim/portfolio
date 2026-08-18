@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { ThemeToggle } from './ThemeToggle';
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
@@ -32,7 +33,7 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-lg font-bold tracking-tight">
+        <a href="/" className="text-lg font-bold tracking-tight">
           OH<span className="text-accent">.</span>
         </a>
         <nav className="hidden items-center gap-6 md:flex">
@@ -45,6 +46,12 @@ export function Header() {
               {item.label}
             </a>
           ))}
+          <Link
+            href="/card"
+            className="text-sm text-[var(--color-text-muted)] transition-colors hover:text-accent"
+          >
+            Card
+          </Link>
         </nav>
         <ThemeToggle />
       </div>

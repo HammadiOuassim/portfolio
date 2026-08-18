@@ -190,3 +190,25 @@ PORTFOLIO_URL=http://localhost:3000 npm run generate:qr
 ```
 
 The QR image is stored at `apps/web/public/qr-code.png` and served statically by Next.js.
+
+## Business Card
+
+Visit **`/card`** on the site for a live preview and downloadable assets.
+
+### Generate or update card assets
+
+```bash
+PORTFOLIO_URL=https://your-app.vercel.app npm run generate:card
+```
+
+Outputs to `apps/web/public/card/`:
+
+| File | Use |
+|------|-----|
+| `business-card-print.pdf` | Print shop (85×55mm + 3mm bleed) |
+| `business-card.pdf` | Trim-size PDF (front + back) |
+| `front.svg` / `back.svg` | Import into Figma or Canva |
+| `front-300dpi.png` / `back-300dpi.png` | Print-ready raster |
+| `front-figma.png` / `back-figma.png` | High-res design reference |
+
+Regenerate whenever your portfolio URL changes, then commit and push.

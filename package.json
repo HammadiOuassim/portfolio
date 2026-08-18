@@ -15,10 +15,13 @@
     "start:web": "npm run start --workspace=apps/web",
     "start:api": "npm run start:prod --workspace=apps/api",
     "generate:qr": "node scripts/generate-qr.js",
+    "generate:card": "node scripts/generate-business-card.js",
     "verify:production": "node scripts/verify-production.js"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
-    "qrcode": "^1.5.4"
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.34.1"
   }
 }
